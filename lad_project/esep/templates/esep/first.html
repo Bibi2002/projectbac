@@ -1,0 +1,14 @@
+{% extends 'esep/base.html' %} 
+
+{% block content %} 
+
+<ul>
+    {% for p in tagam %}
+    <div class = "modell">
+        <p>{{ p.title }}</p>
+        <p>{{p.content}}</p>
+        <a href="{% url 'news-detail' p.id  %}" class="btn btn-warning">Оқу</a>
+    </div>
+    {% endfor %}
+    </ul>
+    {% endblock %}

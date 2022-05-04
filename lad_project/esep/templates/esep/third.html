@@ -1,0 +1,18 @@
+{% extends 'esep/base.html' %} 
+
+{% block content %} 
+
+<ul>
+    <div class = "model">
+        <h2>{{title}}</h2>
+        <hr>
+    </div>
+    {% for p in makal %}
+    <div class = "modell">
+        <p>{{ p.content }}</p>
+        <p style="margin-left: 20%;">{{ p.title }}</p>
+    </div>
+    {% endfor %}
+</ul>
+
+    {% endblock %}

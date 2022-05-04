@@ -1,0 +1,10 @@
+{% extends 'esep/base.html' %}
+
+{% block title %} Welcome{% endblock %}
+{% block content %}
+
+<h1>Сәлем {{ new_user.username }}!</h1>
+
+<p>Cәтті тіркелдіңіз <a href="{% url 'login'  %}" >Войти</a>.</p>
+
+{% endblock %} 

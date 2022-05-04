@@ -1,0 +1,14 @@
+{% extends "esep/base.html" %}
+
+{% block title %}Create an account{% endblock %}
+
+{% block content %}
+    <form action="." method="post" style="display: inline-block;
+    min-width: 150px;
+    vertical-align: top; color: rgb(13, 13, 13);">
+        {{ user_form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" style=" min-width: 150px;
+            font-size: 16px;" value="Create my account"></p>
+    </form>
+{% endblock %}

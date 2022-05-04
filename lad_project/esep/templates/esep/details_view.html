@@ -1,0 +1,13 @@
+{% extends 'esep/base.html' %} 
+
+{% block content %} 
+<ul>
+
+    <div class="modell">
+        <p>{{tagam.title}}</p>
+        <p>{{tagam.content}}</p>
+        <a href="{%  url 'news-delete' tagam.id  %}" class="btn btn-danger">Өшіру</a>
+        <a href="{% url 'news-update' tagam.id %}" class="btn btn-danger">Өзгерту</a>
+    </div>
+    </ul>
+    {% endblock %}
